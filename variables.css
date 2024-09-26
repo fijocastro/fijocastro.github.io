@@ -1,7 +1,10 @@
 :root {
    --fuente-principal : "Montserrat", sans-serif; ;
-   --color-primario: ;
-   --claro-secundario: #a3affe;
-   --oscuro: #211e48;
-   --claro: #E2e8fd ;
+   --color-primario: #f5f5f5 ;
+   --fondo: #1f3b4d;
+   --botones-primarios: #3498db;
+   --botones-secundarios: #2ecc71;
+   --texto-prinipal: #333333;
+   --color-de-apoyo: #7f8c8d;
+   --detalles: #f1c40f;
 }

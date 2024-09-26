@@ -1,17 +1,17 @@
 @import url(variables.css);
 
-html {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+
 
 /** Globales **/
 
 body {
-    background-color: var(--oscuro);
+    background-color: var(--fondo);
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -22,7 +22,7 @@ p{
 }
 
 h1, h2, h3{
-    color: var(--claro-secundario); 
+    color: var(--color-primario); 
     font-family: var(--fuente-principal);
 }
 h1 {
@@ -37,6 +37,8 @@ h3 {
 
 a, li {
     text-decoration: none;
+    font-family: var(--fuente-principal);
+    color: var(--color-de-apoyo);
 }
 
 img {
@@ -46,4 +48,62 @@ img {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+}
+.iconos {
+    font-size: 3rem;
+}
+
+.boton-darkmode {
+    color: white;
+}
+
+
+/* header */
+
+
+.header {
+    width: 100%;
+
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 60%;
+    margin-top: 3rem;
+    border: solid 1px var(--color-de-apoyo);
+    border-radius: 15rem;
+
+}
+
+a {
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: .5rem;
+
+}
+
+.img-perfil {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.contenedor-section {
+    display: flex;
+}
+
+.contenedor-perfil {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.parrafo-perfil {
+    display: inline;
+    border: 1px solid var(--detalles);
+    border-radius: 10rem;
+    color: var(--color-primario)
+    
 }
