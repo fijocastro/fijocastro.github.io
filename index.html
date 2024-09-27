@@ -13,19 +13,20 @@
   <body>
     <header class="header">
       <nav class="navegacion-principal">
-        <a class="item-navegacion" href="#">Proyectos</a>
-        <a class="item-navegacion" href="#">Sobre mí</a>
-        <a class="item-navegacion" href="#">Contacto</a>
+        <a class="item-navegacion" href="#proyectos" >Proyectos</a>
+        <a class="item-navegacion" href="#sobremi">Sobre mí</a>
+        <a class="item-navegacion" href="mailto:fidel-j@hotmail.com">Contacto</a>
       </nav>
     </header>
+    
     <main>
-      <section class= "perfil">
+      <section class= "contenedor">
           <div class="contenedor-perfil">
               <img class="img-perfil" src="img/imagen1.png" alt="foto de perfil" />
               <p class="descripcion-perfil">Disponible para trabajar</p>
           </div>
           <div class="descripcion">
-            <h1>Hola, Soy FideDev</h1>
+            <h1>Hola, Soy Fijocate</h1>
             <p class="descripcion-parrafo">
               <strong
                 >"Programador Junior, en sus inicios" Tecnologo en analisis y
@@ -35,117 +36,77 @@
             </p>
           </div>
           <div class="contenedor-boton-contacto">
-              <a class="boton-contacto" href="#"><ion-icon name="mail-outline"></ion-icon>Contactame</a>
-              <a class="boton-contacto" href="#"><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</a>
+              <a class="boton-contacto" href="mailto:fidel-j@hotmail.com"><ion-icon name="mail-outline"></ion-icon>Contactame</a>
+              <a class="boton-contacto" href="https://co.linkedin.com/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                LinkedIn
+              </a>
           </div>
       </section>
 
-      <section>
-        <h2>Experiencia laboral</h2>
+      <section class="contenedor">
+        <div class="contenedor-perfil contenedor-perfil--experiencia">
+          <h2 ><ion-icon name="briefcase" class="iconos" ></ion-icon>Experiencia laboral</h2>
+          <ul > 
+            
+            <li class="item-experiencia">Programador Junior en proceso</li>
+              <p class="descripcion-parrafo descripcion-parrafo-experiencia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                ipsam natus molestias, corrupti facere facilis quas ex numquam aut
+                exercitationem, animi ducimus. Eum qui beatae, maxime sit officia
+                quis ullam.
+              </p>
+
+              <li class="item-experiencia">Freelancer</li>
+              <p class="descripcion-parrafo descripcion-parrafo-experiencia">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                ipsam natus molestias, corrupti facere facilis quas ex numquam aut
+                exercitationem, animi ducimus. Eum qui beatae, maxime sit officia
+                quis ullam.
+              </p>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>Proyectos</h2>
-        <ul>
-          <li>
-            <div>
-              <h3>Creador de contenido</h3>
-              <h4>Twitch</h4>
-            </div>
-            <p>
+
+      <section class="contenedor" id="viotec">
+        <div class="contenedor-perfil contenedor-perfil--experiencia">
+          <h2 id="proyectos"><ion-icon name="code-slash-outline" class="iconos"></ion-icon></ion-icon>Proyectos</h2>
+          <ul > 
+            
+            <li class="item-experiencia" >Viotec</li>
+            <p class="descripcion-parrafo descripcion-parrafo-experiencia">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
               ipsam natus molestias, corrupti facere facilis quas ex numquam aut
               exercitationem, animi ducimus. Eum qui beatae, maxime sit officia
               quis ullam.
             </p>
-            <a href="#">Saber más</a>
-          </li>
-
-          <li>
             <div>
-              <h3>Programador Junior</h3>
-              <h4>En espera de oportunidad</h4>
+              <img src="" alt="">
             </div>
-            <p>
+        </div>
+      </section>
+
+      <section class="contenedor contenedor--sobremi" id="sobremi">
+        <h2 ><ion-icon name="body" class="iconos"></ion-icon>Sobre mi</h2>
+        <div class="contenedor-perfil contenedor-perfil--sobremi"> 
+          <div class="contenedor-parrafo-sobremi">
+            <p class="descripcion-parrafo descripcion-parrafo-experiencia">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
               ipsam natus molestias, corrupti facere facilis quas ex numquam aut
               exercitationem, animi ducimus. Eum qui beatae, maxime sit officia
               quis ullam.
             </p>
-            <time>Septiembre 2025</time>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Proyectos</h2>
-        <div>
-          <article>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <h3>SVGL - A Beatiful library with svg logos</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Commodi laboriosam consequatur a dolor, dignissimos, sequi fugit
-                doloremque quidem quos accusantium cumque, autem minus in
-                provident? Assumenda asperiores sapiente illum aliquam.
-              </p>
-              <footer>
-                <a href="#">Code</a>
-                <a href="#">Preview</a>
-              </footer>
-            </div>
-          </article>
-        </div>
-
-        <div>
-          <article>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <h3>SVGL - A Beatiful library with svg logos</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Commodi laboriosam consequatur a dolor, dignissimos, sequi fugit
-                doloremque quidem quos accusantium cumque, autem minus in
-                provident? Assumenda asperiores sapiente illum aliquam.
-              </p>
-              <footer>
-                <a href="#">Code</a>
-                <a href="#">Preview</a>
-              </footer>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>Sobre mi</h2>
-        <article>
-          <div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis, doloremque vel voluptatem iure fugiat at debitis fuga
-              perspiciatis? Aut quos maiores illum eos dicta qui ea quia?
-              Doloribus, quasi fuga!
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis, doloremque vel voluptatem iure fugiat at debitis fuga
-              perspiciatis? Aut quos maiores illum eos dicta qui ea quia?
-              Doloribus, quasi fuga!
-            </p>
-            <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis, doloremque vel voluptatem iure fugiat at debitis fuga
-              perspiciatis? Aut quos maiores illum eos dicta qui ea quia?
-              Doloribus, quasi fuga!
+            <p class="descripcion-parrafo descripcion-parrafo-experiencia">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              ipsam natus molestias, corrupti facere facilis quas ex numquam aut
+              exercitationem, animi ducimus. Eum qui beatae, maxime sit officia
+              quis ullam.
             </p>
           </div>
-          <img src="img/imagen2.png" alt="foto de perfil">
-        </article>
+          <div class="contenedor-imagen">
+              <img class="imagen-completa" src="img/imagen2.png" alt="imagenCompleta">
+          </div>
+        </div>
       </section>
     </main>
 
@@ -159,6 +120,7 @@
         </div>
     </footer>
     <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js "></script>
-     <script nomodule  src  = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " ></script>
+    <script nomodule  src  = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " ></script>
+    <script src="app.js"></script>
   </body>
 </html>

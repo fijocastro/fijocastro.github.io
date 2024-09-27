@@ -32,7 +32,8 @@ h1 {
     margin: 0;
 }
 h2 {
-    font-size: 3.2rem;
+    font-size: 4rem;
+    margin: 3rem 0 2rem 0;
 }
 h3 {
     font-size: 2.4rem;
@@ -51,18 +52,16 @@ img {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .iconos {
     font-size: 3rem;
+    padding-right: 1rem;
 }
-
-.boton-darkmode {
-    color: white;
-}
-
 
 /* header */
-
 
 .header {
     display: flex;
@@ -71,15 +70,28 @@ img {
     top: 0;
     width: 100%;
 }
+/*.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: background-color 0.3s;
+}
 
+.hover-effect {
+    background-color: red;
+}*/
 .navegacion-principal {
     display: flex;
     justify-content: center;
     gap: 3rem;
     width: 60%;
     margin-top: 3rem;
-    border: solid 0.1rem var(--color-de-apoyo);
+}
+
+.hover-effect {
     border-radius: 15rem;
+    background-color: var(--botones-primarios);
+    color: var(--detalles);
 }
 
 .item-navegacion {
@@ -88,6 +100,13 @@ img {
     padding: .5rem;
 
 }
+.item-navegacion:hover {
+    color: var(--detalles);
+}
+
+.hover-effect--item {
+    color: var(--color-primario)
+}
 
 /* Contenido principal*/
 
@@ -95,13 +114,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
-.perfil {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 
 .contenedor-perfil {
     width: 80%;
@@ -159,3 +171,42 @@ strong {
 
 }
 
+
+/*Estilos experiencia laboral*/
+
+.list-item--experienciaLaboral{
+    font-size: 10rem;
+    color: var(--detalles);
+}
+
+.contenedor-perfil--experiencia {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: start;
+    margin: 3rem 0 0 0;
+}
+
+.item-experiencia {
+    color: var(--detalles);
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.descripcion-parrafo-experiencia {
+    margin-top: 0.5rem;
+}
+
+.contenedor-perfil--sobremi {
+    margin: 0;
+    display: flex;
+}
+
+.contenedor-imagen {
+    width: 90%;
+    
+    
+}
+.imagen-completa {
+    width: 40rem;
+
+}
