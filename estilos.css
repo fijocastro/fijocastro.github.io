@@ -14,7 +14,10 @@ body {
     background: radial-gradient(circle, rgba(0, 8, 13, 0.961), var(--fondo) );
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+
 
 p {
     font-family: var(--fuente-principal);
@@ -51,7 +54,6 @@ img {
 
 .contenedor {
     max-width: 120rem;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -67,16 +69,27 @@ img {
     display: flex;
     justify-content: center;
     position: sticky;
-    top: 0;
+    top: 8rem;
     width: 100%;
 }
 
+    .navegacion-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 3rem;
+
+
+}
+
+@media (min-width: 768px){
 .navegacion-principal {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    width: 60%;
-    margin-top: 3rem;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin: 5rem auto;
+   width: 50%;
+   }
 }
 
 .hover-effect {
@@ -110,11 +123,19 @@ main {
 .contenedor-perfil {
     width: 80%;
     display: flex;
-    justify-content: flex-start ;
+    flex-direction: column;
     align-items: center;
     gap: 3rem;
-    margin-top: 20rem;
-    margin-bottom: 5rem;
+    margin: 10rem 0 5rem 0;
+   
+}
+
+@media (min-width: 768px) {
+    .contenedor-perfil {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
 
 .img-perfil {
@@ -132,12 +153,15 @@ main {
 
 .descripcion {
     width: 80%;
+    overflow: hidden;
 }
 
 .descripcion-parrafo {
     font-size: 3rem;
     margin-top: 3rem;
+
 }
+
 
 strong {
     color: var(--detalles);
@@ -146,15 +170,23 @@ strong {
 
 .contenedor-boton-contacto {
     display: flex;
-    justify-content: flex-start;
-    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     width: 80%;
     color: var(--color-primario);
 }
 
+@media(min-width: 768px){
+    .contenedor-boton-contacto{
+        flex-direction: row;
+    }
+}
+
+
 .boton-contacto {
     font-size: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: var(--color-primario);
     background-color: var(--botones-primarios);
     border: solid 0.2rem var(--color-de-apoyo);
@@ -197,35 +229,41 @@ strong {
     width: 90%;
     transform: rotate(10deg);
     border: 2rem solid  var(--color-de-apoyo);
-    
 }
+
 .imagen-completa {
     width: 30rem;
     border: 3rem solid var(--texto-principal);
     transform: rotate(20deg);
 }
 
+/* estilos footer*/
+
 footer {
     width: 100%;
     background-color: var(--texto-principal);
+    margin-top: 1rem;
 }
 
-.footer-contenedor {
+.footer-contenedor{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column-reverse;
     align-items: center;
+}
 
+.navegacion-footer {
+    display: flex;
+    flex-direction: column;
 }
 
 .descripcion-footer {
     font-size: 3rem;
-    padding: 3rem;
+    padding: 2rem;
     color: var(--color-de-apoyo);
     font-family: var(--fuente-principal);
-
+    text-align: center;
 }
 
 .item-navegacion--footer {
     color: var(--color-de-apoyo);
-    
 }
